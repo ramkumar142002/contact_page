@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Main.css';
+import './Main2.css';
 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -14,7 +14,7 @@ const facebook = <FontAwesomeIcon icon={faFacebook} size='3x' />;
 const twitter = <FontAwesomeIcon icon={faSquareTwitter} size='3x' />;
 const linkedin = <FontAwesomeIcon icon={faLinkedin} size='3x' />;
 
-class Main extends Component {
+class Main2 extends Component {
     render() {
         return (
             <div className='container'>
@@ -47,12 +47,18 @@ class Main extends Component {
                 <div className='right'>
                     <h className='msg'>Send us a message</h>
                     <form className='form'>
-                        <input className='firstname' type='text' placeholder='  First Name'></input>
-                        <input className='lastname' type='text' placeholder='   Last Name'></input>
-                        <input className='mail' type='text' placeholder='   Mail'></input>
-                        <input className='phone' type='text' placeholder='   Phone'></input>
-                        <input className='message' placeholder='Write your message'></input>
-                        <button className='submit' placeholder='Send Message'>Send Message</button>
+                        <div className='top'>
+                            <input className='firstname' type='text' placeholder='  First Name'></input>
+                            <input className='lastname' type='text' placeholder='   Last Name'></input>
+                        </div>
+                        <div className='middle'>
+                            <input className='mail' type='text' placeholder='   Mail'></input>
+                            <input className='phone' type='text' placeholder='   Phone'></input>
+                        </div>
+                        <div className='bottom'>
+                            <input className='message' placeholder='Write your message'></input>
+                            <button className='submit' placeholder='Send Message'>Send Message</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -60,4 +66,4 @@ class Main extends Component {
     }
 }
 
-export default Main;
+export default Main2;
