@@ -22,17 +22,19 @@ class Main2 extends Component {
                     <h className='contact'>Contact Information</h>
                     <p id='text' className='text instruction'>Fill up the form and our team will get back to you within 24 hours</p>
                     <div className='static'>
-                        <div className='det'>
-                            <p className='symbol'> {phone} </p>
-                            <p className='text'>Phone: +{this.props.phone}</p>
-                        </div>
-                        <div className='det'>
-                            <p className='symbol'> {email} </p>
-                            <p className='text'>Email: {this.props.email}</p>
-                        </div>
-                        <div className='det'>
-                            <p className='symbol'> {web} </p>
-                            <p className='text'>Website: <a href='#'>{this.props.website}</a></p>
+                        <div className='box'>
+                            <div className='det'>
+                                <p className='symbol'> {phone} </p>
+                                <p className='text'>Phone: +{this.props.phone}</p>
+                            </div>
+                            <div className='det'>
+                                <p className='symbol'> {email} </p>
+                                <p className='text'>Email: {this.props.email}</p>
+                            </div>
+                            <div className='det'>
+                                <p className='symbol'> {web} </p>
+                                <p className='text'>Website: <a href='#'>{this.props.website}</a></p>
+                            </div>
                         </div>
                     </div>
 
