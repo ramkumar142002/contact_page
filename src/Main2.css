@@ -181,7 +181,7 @@
         flex-direction: column;
     }
     .left, .right{
-        height: 50%;
+        /* height: 50%; */
         width: 100%;
     }
     .msg{
